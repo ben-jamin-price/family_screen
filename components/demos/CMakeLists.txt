@@ -1,0 +1,15 @@
+idf_component_register(
+    SRCS
+        "src/demos_color.c"
+        "src/demos_gradient.c"
+        "src/demos_bounce.c"
+        "src/demos_checker.c"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        display_panel
+        util
+    PRIV_REQUIRES
+        freertos
+        esp_timer
+)

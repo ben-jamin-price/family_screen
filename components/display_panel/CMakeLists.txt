@@ -1,0 +1,14 @@
+idf_component_register(
+    SRCS
+        "src/display.c"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        board
+    PRIV_REQUIRES
+        freertos
+        esp_timer
+        esp_lcd
+        esp_lcd_dsi
+        esp_lcd_jd9365_10_1
+)

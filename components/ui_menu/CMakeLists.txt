@@ -1,0 +1,16 @@
+idf_component_register(
+    SRCS
+        "src/menu.c"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        display_panel
+        touch_gt9xx
+        ui_gfx
+        util
+        demos
+    PRIV_REQUIRES
+        freertos
+        esp_timer
+        esp32_p4_nano
+)

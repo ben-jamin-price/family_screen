@@ -1,0 +1,10 @@
+# LVGL tick hook (we already run a 1ms esp_timer)
+CONFIG_LV_CONF_SKIP=y
+CONFIG_LV_CONF_MINIMAL=y
+
+# Use LVGL v9 color format setting via code; no need to lock depth here.
+# If your IDF has LVGL Kconfig for color depth, you can set it:
+# CONFIG_LV_COLOR_DEPTH_24=y
+
+# I2C driver defaults (optional)
+CONFIG_I2C_ISR_IRAM_SAFE=y
